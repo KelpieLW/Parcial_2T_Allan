@@ -35,7 +35,7 @@ public class WeatherServices {
         );
 
         JSONObject windObj = cityApiObject.isNull("wind") ? null:cityApiObject.getJSONObject("wind");
-        Wind cityWind = new Wind(windObj.getDouble("speed"), windObj.getDouble("deg"), windObj.getDouble("gust"));
+        Wind cityWind = new Wind(windObj.getDouble("speed"), windObj.getDouble("deg"));
 
 
         City cityObject = new City(

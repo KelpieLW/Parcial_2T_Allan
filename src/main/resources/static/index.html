@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather Map</title>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    	<link rel="shortcut icon" href="#">
+		
+		<script src="/webjars/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="js/client.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+
+		<link rel="stylesheet" href="css/map.css">
+		
+
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkea9ok6Fc6w38Jrb1X87tbul8F05BmHI&language=en"
+		type="text/javascript"></script>		
+	</head>
+
+	<body onload="app.initialize()">
+		<div>
+			<h1>Weather Forecast</h1>
+		</div>
+
+		<div>
+			<input id="searchCity" type="text">
+			<button id="buttonSendCity" onclick="app.searchWeather($('#searchCity').val())">Buscar</button>
+		</div>
+
+		<div id="map"></div>
+
+		<div>
+
+			<h3 id="cityTittle"></h3>
+			<table id="weatherInformation">
+				<thead>
+					<tr>
+						<th>City</th>
+						<th>Climate State</th>
+						<th>Climate Description</th>
+						<th>Avg Temperature</th>
+						<th>Max Temperature</th>
+						<th>Min Temperature</th>
+						<th>Wind speeds</th>
+					</tr>
+					
+				</thead>
+
+				<tbody id="weatherInformationBody">
+					
+				</tbody>
+				
+			</table>
+		</div>
+
+
+	</body>
+</html>
