@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* edu.eci.arsw.parcialt2
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* edu.eci.arsw.parcialt2.Parcialt2Application

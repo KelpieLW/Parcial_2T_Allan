@@ -1,0 +1,10 @@
+edu\eci\arsw\parcialt2\Model\Temperature.class
+edu\eci\arsw\parcialt2\Model\Weather.class
+edu\eci\arsw\parcialt2\Model\Wind.class
+edu\eci\arsw\parcialt2\Service\HttpWeatherServices.class
+edu\eci\arsw\parcialt2\Cache\CityCache.class
+edu\eci\arsw\parcialt2\Model\Location.class
+edu\eci\arsw\parcialt2\Parcialt2Application.class
+edu\eci\arsw\parcialt2\Model\City.class
+edu\eci\arsw\parcialt2\CovidService\WeatherServices.class
+edu\eci\arsw\parcialt2\Controller\WeatherApiController.class
