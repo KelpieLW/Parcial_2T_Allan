@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Controller para los endpoints del api que ofrece nuestro backend
+ */
 @RestController
 @RequestMapping("/weather")
 public class WeatherApiController {
@@ -17,6 +20,12 @@ public class WeatherApiController {
     @Autowired
     private WeatherServices service;
 
+    /**
+     * Ofrece el endpoint del api para que sea consultado por el front end
+     * @param city
+     * @return
+     * @throws UnirestException
+     */
     @RequestMapping(value="/{city}",method= RequestMethod.GET)
     public ResponseEntity<?> getStatsByCountry(@PathVariable String city) throws UnirestException {
         return new ResponseEntity<>(service.getWeatherByCity(city), HttpStatus.ACCEPTED);

@@ -7,12 +7,23 @@ import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+/**
+ * Esta clase ofrece servicios para manipular los JSON que son consultados por la API
+ */
 @Service
 public class WeatherServices {
+
 
     @Autowired
     HttpWeatherServices httpWeatherservice;
 
+    /**
+     * Crea un objeto City a partir del resultado dado por la API, este resultado se toma de la inyeccion de dependencias "httpWeatherservice"
+     * @param cityName
+     * @return
+     * @throws UnirestException
+     */
     public City getWeatherByCity(String cityName) throws UnirestException {
 
         JSONObject cityApiObject = httpWeatherservice.getWeatherByCity(cityName);
