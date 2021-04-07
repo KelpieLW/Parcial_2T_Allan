@@ -1,5 +1,24 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
 
+## Entrega
+
+Forma de ejecutar localmente por medio de los comandos:  
+mvn compile  
+mvn spring-boot:run  
+
+
+Heroku app: https://parcialt2arsw.herokuapp.com/  
+
+
+
+La aplicacion funciona igual que como fue propuesto en la arquitectura dada por el enunciado, es decir, tenemos un componente de front end  
+que accede a los servicios que ofrece un controlador (particularmente WeatherApiController), este controlador cuenta con una inyeccion de dependencias  
+que da acceso a los servicios de WeatherServices, el cual a su vez, tambien tiene una inyeccion de dependencias de "HttpWeatherServices"  
+esta clase hace peticiones por medio de unirest a la API de OpenWeatherMap.  
+
+La manera en la que este codigo puede hacer una consulta a un proveedores de servicios distinto es cambiando la consulta que se hace por medio de unirest  
+en la clase HttpWeatherServices.
+
 ## Preparación para el Parcial
 
 Con el objetivo de preparar el examen final del segundo tercio, por favor siga las siguientes instrucciones.
