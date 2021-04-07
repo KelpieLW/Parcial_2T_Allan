@@ -7,7 +7,7 @@ mvn compile
 mvn spring-boot:run  
 
 
-Heroku app: https://parcialt2arsw.herokuapp.com/  
+Heroku app: https://parcial2tweisnner.herokuapp.com/  
 
 
 
